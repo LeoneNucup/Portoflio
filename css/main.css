@@ -1,0 +1,29 @@
+body {
+    background-color: #B3C8CF;
+}
+.sub-box {
+    background-color: #BED7DC;
+    padding: 10px;
+    color: black;
+    display: flex;
+}
+#profile {
+    width: 300px;
+    height: 280px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+#profile-text {
+    color: black;
+    font-size: 25px;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+
+.center {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
