@@ -1,19 +1,31 @@
-body {
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     background-color: #B3C8CF;
 }
 .sub-box {
     background-color: #BED7DC;
     padding: 10px;
-    color: black;
+    margin: auto;
     display: flex;
+    align-items: center;
+    border-radius: 20px;
+
 }
 #profile {
-    width: 300px;
-    height: 280px;
-    margin-right: 20px;
-    border-radius: 20px;
-}
+    min-width: 320px;
+    min-height: 300px;
+    max-width: initial;
+    max-height: initial;
+    border-radius: 10px;
+    margin: auto;
+    margin-right: 10px;
 
+}
 #profile-text {
     color: black;
     font-size: 25px;
@@ -22,8 +34,87 @@ body {
 }
 
 
+#banner {
+    max-width: 75%;
+    min-width: 75%;
+    height: 50px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    #banner-text {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+}
+
+
+
+
+.project {
+    max-width: 75%;
+    min-width: 75%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+
+}
+
+.top {
+    position: fixed;
+    top: .5rem;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
 .center {
     position: absolute;
     top: 25%;
-    left: 25%;
+    left: 12.5%;
+    right: 12.5%;
+}
+
+@media (max-width: 1024px) {
+    .sub-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #profile {
+        width: 150px;
+        margin: 0 0 15px 0;
+
+    }
+
+    #profile-text {
+        font-size: 16px;
+    }
+
+    #banner {
+        width: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    .sub-box {
+        max-width: 95%;
+
+        padding: 15px;
+    }
+
+    #profile {
+        width: 120px;
+    }
+
+    #profile-text {
+        font-size: 14px;
+
+    }
+
 }
