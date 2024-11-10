@@ -91,7 +91,7 @@ a {
     #projectA {
 
         grid-area: projectA;
-        height: 300px;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: left;
@@ -101,14 +101,14 @@ a {
     #projectB {
 
         grid-area: projectB;
-        height: 300px;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: left;
         text-align: justify;
     }
 
-    #projectC {
+    /* #projectC {
 
         grid-area: projectC;
         height: 300px;
@@ -117,7 +117,7 @@ a {
         justify-content: left;
         text-align: justify;
 
-    }
+    } */
 }
 
 .sub-box {
