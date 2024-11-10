@@ -1,0 +1,144 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #B3C8CF;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#banner {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 20px;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    #banner-text {
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
+        font-size: 18px;
+        font-weight: bold;
+
+    }
+
+    #banner-extra {
+        display: flex;
+        flex-direction: row;
+        margin-left: 70%;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 900px;
+    margin-top: 80px;
+    border-radius: 20px;
+
+    #profile-img {
+        min-width: 320px;
+        height: auto;
+        border-radius: 18px;
+        margin-right: 20px;
+    }
+    #profile-text {
+        color: black;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: justify;
+    }
+}
+
+.socials {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project {
+    display: grid;
+
+    grid-template-areas: 'projectA projectB projectC';
+    gap: 20px;
+    width: 90%;
+    margin-top: 100px;
+
+    #projectA {
+        grid-area: projectA;
+        height: 300px;
+    }
+
+    #projectB {
+        grid-area: projectB;
+    }
+
+    #projectC {
+        grid-area: projectC;
+
+    }
+}
+
+.sub-box {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    flex: 1 1 100px;
+    text-align: center;
+    justify-content: center;
+    background-color: #BED7DC;
+    border-radius: 20px;
+}
+
+@media (max-width: 1081px) {
+    .sub-box {
+        flex-direction: row;
+        text-align: center;
+        #profile-img {
+            min-width: 320px;
+        }
+
+    }
+
+    #profile-text {
+        color: black;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: justify;
+    }
+
+    #banner {
+        z-index: 10;
+        width: 100%;
+        #banner-text {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #banner-extra {
+            display: flex;
+            flex-direction: row;
+            margin-left: 50%;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
