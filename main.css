@@ -9,6 +9,11 @@ body {
 }
 
 a {
+    text-decoration: underline;
+    color: black;
+}
+
+.links {
     text-decoration: none;
     color: black;
 }
@@ -29,7 +34,7 @@ a {
     #banner-text {
         display: flex;
         flex-direction: row;
-        margin-left: 50px;
+        margin-right: 40px;
         font-size: 18px;
         font-weight: bold;
 
@@ -38,7 +43,7 @@ a {
     #banner-extra {
         display: flex;
         flex-direction: row;
-        margin-left: 70%;
+        margin-left: 75%;
         font-size: 18px;
         font-weight: bold;
     }
@@ -98,26 +103,6 @@ a {
         text-align: justify;
     }
 
-    #projectB {
-
-        grid-area: projectB;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        text-align: justify;
-    }
-
-    /* #projectC {
-
-        grid-area: projectC;
-        height: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        text-align: justify;
-
-    } */
 }
 
 .sub-box {
@@ -130,15 +115,33 @@ a {
     border-radius: 20px;
 }
 
-@media (max-width: 1081px) {
-    .sub-box {
-        flex-direction: row;
-        text-align: center;
-        #profile-img {
-            min-width: 320px;
+@media (max-width: 1024px) {
+    #project {
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 100px;
+
+        #projectA {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            text-align: justify;
+
+
+        }
+        .sub-box {
+            flex-direction: column;
+            text-align: center;
+            min-width: 500px;
+
         }
 
     }
+
+
 
     #profile-text {
         color: black;
@@ -157,7 +160,7 @@ a {
         #banner-extra {
             display: flex;
             flex-direction: row;
-            margin-left: 50%;
+            margin-left: 55%;
             font-size: 18px;
             font-weight: bold;
         }
