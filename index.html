@@ -7,20 +7,11 @@
     <title>Leone Nucup</title>
     <link rel='stylesheet' href='main.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="import" href="banner.html">
 </head>
 
 <body>
-    <div id="banner">
-        <p id="banner-text">Leone Nucup</p>
-        <div id="banner-extra">
-            <a class="links" href="https://github.com/LeoneNucup" target="_blank" id="banner-text">Github</a>
-            <a class="links" href="https://www.linkedin.com/in/leone-nucup-ba368b217/" target="_blank"
-                id="banner-text">LinkedIn</a>
-            <a class="links" href="#project" id="banner-text">Projects</a>
-        </div>
-
-    </div>
-
+    <div id="banner-template"></div>
     <div id="profile">
         <div class="sub-box" style="max-width: 900px; max-height: 600px; border-radius: 20px;">
             <img id="profile-img" src="images/Profile.jpg">
@@ -29,81 +20,23 @@
                 with experience on software development, algorithms and data structures with the
                 goal of becoming a Game Developer or Back-end Developer. Focusing on programming languages
                 such as Python, Java, HTML, CSS, Javascript, and has experience in cloud
-                computing. I am prepared to learn more and looking to understand more about technology in various
+                computing. I am prepared to learn more and understand more about technology in various
                 projects.
             </p>
         </div>
     </div>
 
     <div class="socials">
-        <div class="sub-box">
+        <div class="sub-box" style="max-width: 780px;">
             <a style="font-size:50px; margin: 5px 0px 0px 30px;" href=" https://github.com/LeoneNucup" target="_blank"
                 class="fa links">&#xf09b;</a>
             <a style="font-size:50px;margin: 5px 0 0px 220px;" target="_blank"
                 href=" https://www.linkedin.com/in/leone-nucup-ba368b217/" class="fa links">&#xf08c;</a>
             <a style="font-size:20px;margin:17px 0 0 140px;"
-                href="mailto:nucupleonenel@gmail.com">nucupleonenel@gmail.com</a>
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=nucupleonenel@gmail.com" target="_blank">Contact Me
+                Here</a>
         </div>
 
-
-    </div>
-
-
-    <div id="project">
-        <div class="sub-box" id="projectA">
-            <br>
-            <p><a href="https://github.com/LeoneNucup/BlockchainFinal" target="_blank"><strong>Blockchain Based Task
-                        Management System</strong></a><br><br> The application is built on the Ethereum
-                blockchain to
-                enhance security, transparency, and control in managing
-                tasks. The application utilizesSolidity smart contracts to enable a task management system, where
-                only a designated "source wallet" can add tasks, while individual users can mark tasks as completed. By
-                using blockchain technology, the system provides a transparent and tamper-proof record of task
-                activities, eliminating the need for a centralized authority. The application is integrated with
-                MetaMask and Ganache test Network
-            </p>
-            <div>
-                <br>
-                <img style="width: 400px; height: auto; border-radius: 10px; margin-left:10px"
-                    src="images/Blockchain.png">
-            </div>
-
-        </div>
-
-        <div class="sub-box" id="projectA">
-            <br>
-            <p><a href="https://github.com/LeoneNucup/OpsysFinal " target="_blank"><strong>Operating System Memory
-                        Simulation</strong></a><br><br> A memory management project using HTML, CSS, and
-                JavaScript that visualizes core operating system concepts like memory allocation, processor scheduling,
-                and page replacement strategies.
-            </p>
-            <div>
-                <br>
-                <img style="width: 400px; height: auto; border-radius: 10px; margin-left:10px" src="images/Opsys.png">
-            </div>
-
-
-
-        </div>
-
-        <div class="sub-box" id="projectA">
-            <br>
-            <p><a href="https://github.com/LeoneNucup/AdaptiveLearningAssistant" target="_blank"><strong>Adaptive
-                        Learning
-                        Assitant Using LSTM and Mastery Learning Framework</strong>
-                </a><br><br>In this
-                project, I alongside my Thesis group members created a website that utilized the Long-Short Term Memory
-                algorithm to adapt to a student’s learning pace using a initial baseline test to understand the general
-                level of students in a locale. Using programming languages such as HTML and CSS for front-end
-                development and Python and PHP for back-end development using the Flash framework in deploying our LSTM
-                model written in Python.
-            </p>
-            <div>
-            </div>
-
-
-
-        </div>
 
     </div>
 
@@ -112,5 +45,13 @@
 
 
 </body>
+<script>
+    fetch('banner.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('banner-template').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading banner:', error));
+</script>
 
 </html>
