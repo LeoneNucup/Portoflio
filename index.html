@@ -4,54 +4,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leone Nucup</title>
-    <link rel='stylesheet' href='main.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="import" href="banner.html">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <div id="banner-template"></div>
-    <div id="profile">
-        <div class="sub-box" style="max-width: 900px; max-height: 600px; border-radius: 20px;">
-            <img id="profile-img" src="images/Profile.jpg">
-            <p id="profile-text">
-                <strong>Hello</strong>, I am a 4th-year Computer Science student at Holy Angel University
-                with experience on software development, algorithms and data structures with the
-                goal of becoming a Game Developer or Back-end Developer. Focusing on programming languages
-                such as Python, Java, HTML, CSS, Javascript, and has experience in cloud
-                computing. I am prepared to learn more and understand more about technology in various
-                projects.
-            </p>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Leone Nucup</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,I am <br> <span class="home__title-color">Leone Nucup</span><br>
+                </h1>
+                <a class="email" href="https://mail.google.com/mail/?view=cm&fs=1&to=nucupleonenel@gmail.com"
+                    target="_blank" style="color: black;">NucupLeonenel@gmail.com </a>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/leone-nel-nucup/" class="home__social-icon"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/LeoneNucup" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+
+
+            <div class="home__img">
+                <img src="images\Profile.jpg" style="border-radius: 50%; width: 80%;" ">
+            </div>
+        </section>
+        <section class=" about section " id=" about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="images\Profile.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">Leone Nel Nucup</h2>
+                        <p class="about__text">I am a 4th-year Computer Science student at Holy Angel University
+                            with experience on software development, algorithms and data structures with the
+                            goal of becoming a Game Developer or Back-end Developer. Focusing on programming languages
+                            such as Python, Java, HTML, CSS, Javascript, and has experience in cloud
+                            computing. I am prepared to learn more and understand more about technology in various
+                            projects.</p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Programming Languages</h2>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-python skills__icon'></i>
+                            <span>Python</span>
+                        </div>
+
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span>HTML</span>
+                        </div>
+
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span>JAVASCRIPT</span>
+                        </div>
+
+
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span>CSS</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience__container bd-grid">
+                <div>
+                    <h2 class="experience__subtitle">Acquired Certificates and Finished Courses</h2>
+                    <div class="experience__data">
+                        <div class="experience__names">
+                            <span>Learning Data Visualization</span>
+                        </div>
+                    </div>
+                    <div class="experience__data">
+                        <div class="experience__names">
+                            <span>Progect Management</span>
+                        </div>
+                    </div>
+                    <div class="experience__data">
+                        <div class="experience__names">
+                            <span>Collaborative Working in a Remote Team</span>
+                        </div>
+                    </div>
+                    <div class="experience__data">
+                        <div class="experience__names">
+                            <span>Communicating with Confidence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="work section" id="work">
+            <h2 class="section-title">Previous Projects</h2>
+
+            <div class="work__container bd-grid">
+                <div><a href="https://github.com/LeoneNucup/AdaptiveLearningAssistant" target="_blank"><strong>Adaptive
+                            Learning Assitant Using LSTM and Mastery Learning Framework</strong>
+
+
+                    </a><br> <br> In this project, I alongside my Thesis group members created a website that
+                    utilized
+                    the Long-Short Term Memory
+                    algorithm to adapt to a student’s learning pace using a initial baseline test to understand the
+                    general
+                    level of students in a locale. Using programming languages such as HTML and CSS for front-end
+                    development and Python and PHP for back-end development using
+                    the Flash framework in deploying our LSTM model written in Python.</p>
+                </div>
+                <div>
+                    <p><a href="https://github.com/LeoneNucup/BlockchainFinal" target="_blank"><strong>Blockchain
+                                Based
+                                Task
+                                Management System</strong></a><br><br> The application is built on the Ethereum
+                        blockchain to
+                        enhance security, transparency, and control in managing
+                        tasks. The application utilizesSolidity smart contracts to enable a task management system,
+                        where
+                        only a designated "source wallet" can add tasks, while individual users can mark tasks as
+                        completed. By
+                        using blockchain technology, the system provides a transparent and tamper-proof record of
+                        task
+                        activities, eliminating the need for a centralized authority. The application is integrated
+                        with
+                        MetaMask and Ganache test Network
+                    </p>
+                </div>
+                <div>
+                    <p><a href="https://github.com/LeoneNucup/OpsysFinal " target="_blank"><strong>Operating System
+                                Memory
+                                Simulation</strong></a><br><br> A memory management project using HTML, CSS, and
+                        JavaScript that visualizes core operating system concepts like memory allocation, processor
+                        scheduling,
+                        and page replacement strategies.
+                </div>
+        </section>
+
+
+        <!-- <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+
+            </div>
+        </section> -->
+    </main>
+
+
+    <footer class="footer">
+        <p class="footer__title">Leone Nucup</p>
+        <div class="footer__social">
+            <a class="email" href="https://mail.google.com/mail/?view=cm&fs=1&to=nucupleonenel@gmail.com"
+                target="_blank">NucupLeonenel@gmail.com </a>
         </div>
-    </div>
-
-    <div class="socials">
-        <div class="sub-box" style="max-width: 780px;">
-            <a style="font-size:50px; margin: 5px 0px 0px 30px;" href=" https://github.com/LeoneNucup" target="_blank"
-                class="fa links">&#xf09b;</a>
-            <a style="font-size:50px;margin: 5px 0 0px 220px;" target="_blank"
-                href=" https://www.linkedin.com/in/leone-nucup-ba368b217/" class="fa links">&#xf08c;</a>
-            <a style="font-size:20px;margin:17px 0 0 140px;"
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=nucupleonenel@gmail.com" target="_blank">Contact Me
-                Here</a>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/leone-nel-nucup/" class="footer__icon"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/LeoneNucup" class="footer__icon"><i class='bx bxl-github'></i></a>
         </div>
-
-
-    </div>
-
-    </div>
+    </footer>
 
 
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script src="assets/js/main.js"></script>
 </body>
-<script>
-    fetch('banner.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('banner-template').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading banner:', error));
-</script>
 
 </html>
